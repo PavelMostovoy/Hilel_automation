@@ -17,10 +17,6 @@ driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub',
                           options=options)
 
 
-driver_2 = webdriver.Remote(command_executor='http://localhost:4444/wd/hub',
-                          options=options)
-
-
 uri_variable = "Napoleon"
 
 url = ["https://www.wikipedia.org/"]

@@ -1,5 +1,8 @@
 """
-docker run -d -p 4444:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug
+docker run -d --name selenium_chrome -p 4444:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug
+docker rm selenium_chrome
+docker stop selenium_chrome
+docker rm --force selenium_chrome
 """
 
 
