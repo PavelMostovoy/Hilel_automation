@@ -35,9 +35,15 @@ class TestSuite:
     def test_third_check(self):
         status = requests.get("https://wikipedia.com").status_code
         self.variable.append(status)
-        assert status == 202
+        assert status == 200
 
     def test_forth_check(self):
         status = requests.get("https://www.aqa.science").status_code
         self.variable.append(status)
         assert status == 200
+
+    def test_fifth_check(self):
+        status = requests.get("https://www.aqa.science/123").status_code
+        self.variable.append(status)
+        assert status == 200
+
