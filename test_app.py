@@ -25,7 +25,7 @@ class TestSuite:
     def test_first_check(self):
         status = requests.get("https://google.com").status_code
         self.variable.append(status)
-        assert status == 200
+        assert status == 201
 
     def test_second_check(self):
         status = requests.get("https://google.com/_").status_code
