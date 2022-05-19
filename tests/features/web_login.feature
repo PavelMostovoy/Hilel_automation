@@ -1,4 +1,4 @@
-@cucumber-basket
+
 Feature: Web Test
   As a User I open page,
 
