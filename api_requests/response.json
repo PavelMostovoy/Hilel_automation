@@ -1,0 +1,73 @@
+{
+  "count": 22,
+  "next": "https://www.aqa.science/users/?page=2",
+  "previous": null,
+  "results": [
+    {
+      "url": "https://www.aqa.science/users/316/",
+      "username": "piaepqqasy",
+      "email": "",
+      "groups": []
+    },
+    {
+      "url": "https://www.aqa.science/users/296/",
+      "username": "fixosoimey",
+      "email": "",
+      "groups": []
+    },
+    {
+      "url": "https://www.aqa.science/users/249/",
+      "username": "test_user2",
+      "email": "",
+      "groups": []
+    },
+    {
+      "url": "https://www.aqa.science/users/187/",
+      "username": "emptyone_1",
+      "email": "",
+      "groups": []
+    },
+    {
+      "url": "https://www.aqa.science/users/185/",
+      "username": "page_trigger_3",
+      "email": "",
+      "groups": []
+    },
+    {
+      "url": "https://www.aqa.science/users/184/",
+      "username": "Page_trigger_2",
+      "email": "",
+      "groups": []
+    },
+    {
+      "url": "https://www.aqa.science/users/183/",
+      "username": "page_trigger_1",
+      "email": "vovchinsky7898@gmail.com",
+      "groups": []
+    },
+    {
+      "url": "https://www.aqa.science/users/182/",
+      "username": "pagetrigger",
+      "email": "",
+      "groups": [
+        "https://www.aqa.science/groups/1/"
+      ]
+    },
+    {
+      "url": "https://www.aqa.science/users/181/",
+      "username": "ivovchynskyi1111",
+      "email": "vovchinsky7898@gmail.com",
+      "groups": [
+        "https://www.aqa.science/groups/1/"
+      ]
+    },
+    {
+      "url": "https://www.aqa.science/users/180/",
+      "username": "tets111",
+      "email": "vovchinsky7898@gmail.com",
+      "groups": [
+        "https://www.aqa.science/groups/1/"
+      ]
+    }
+  ]
+}
