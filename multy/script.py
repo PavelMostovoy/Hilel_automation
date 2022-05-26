@@ -21,7 +21,7 @@ def response_time(url):
     return requests.get(url).status_code
 
 list_of_urls = []
-for i in range(100):
+for i in range(10):
     list_of_urls.append(url)
 
 tasks = []

@@ -10,17 +10,36 @@ async def req(url=url):
     print("ending")
     return r
 
+def timer_fn(fn):
+    def inner(*args, **kwargs):
+        start = time.time()
+        code = fn(*args, **kwargs)
+        calculated_time  = time.time() - start
+        return(code, calculated_time)
+    return inner
+
+@timer_fn
+def response_time(url):
+    return requests.get(url).status_code
+
+
+
 
 tasks = []
 
 
 async def main():
-    for i in range(100):
-        tasks.append(asyncio.create_task(req()))
-    await asyncio.gather(*tasks)
+    for i in range(10):
+        # tasks.append(asyncio.create_task(response_time, url ))
+        tasks.append(asyncio.to_thread(response_time,url))
+    list_of_responses = await asyncio.gather(*tasks)
+    return list_of_responses
+
+
 
 
 if __name__ == "__main__":
     start_time = time.time()
-    asyncio.run(main())
+    print(asyncio.run(main()))
+
     print(time.time() - start_time)
