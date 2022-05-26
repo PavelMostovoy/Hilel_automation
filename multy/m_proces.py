@@ -1,6 +1,6 @@
 import requests
 import time
-from multiprocessing import Pool , Manager, Value, Process
+from multiprocessing import Pool, Manager, Value, Process
 url = 'https://en.wikipedia.org/wiki/Political_impact_of_the_COVID-19_pandemic'
 
 
@@ -11,7 +11,7 @@ def req(url=url):
     return r
 
 
-tasks = [url for x in range(100)]
+tasks = [url for x in range(10)]
 
 
 if __name__ == "__main__":
