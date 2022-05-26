@@ -6,8 +6,8 @@ import json
 import requests
 
 URL = "https://www.aqa.science"
-USER = "admin"
-PASSWORD = "admin123"
+USER = "placeholder"
+PASSWORD = "placeholder"
 
 first_response = requests.get(URL).json()
 
