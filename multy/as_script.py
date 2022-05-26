@@ -30,7 +30,7 @@ tasks = []
 
 async def main():
     for i in range(10):
-        # tasks.append(asyncio.create_task(response_time, url ))
+        # tasks.append(asyncio.create_task(req))
         tasks.append(asyncio.to_thread(response_time,url))
     list_of_responses = await asyncio.gather(*tasks)
     return list_of_responses
