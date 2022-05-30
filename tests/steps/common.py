@@ -1,3 +1,4 @@
+from  selenium import webdriver
 from pytest_bdd import scenarios, given, when, then, parsers
 
 
@@ -19,3 +20,29 @@ def second_user(name, name_0, request):
 def comparation_l(request):
     print("final result")
     # assert request.login == request.second_name
+
+#
+# @given(parsers.re("User_1 '(?P<name_1>.*)'"))
+# def step_impl(name_1, request):
+#     request.login = name_1
+#     print(f"user {name_1}")
+#
+#
+# @when(parsers.re("(?P<name>.*) open (?P<url>.*) using browser (?P<browser>.*)"))
+# def step_impl(name, url, browser, request):
+#     if browser in request.browsers:
+#         client = getattr(request.browsers, browser)
+#     else:
+#         client = webdriver.Remote = ("http:browserstack")
+#
+#     client.get(url)
+#     client.send_keys(name)
+#
+#     request.user_session = client
+#
+#
+# @given("User fill <data> in form")
+# def step_impl(request):
+#     driver = request.user_session
+#     driver.send_keys()
+#

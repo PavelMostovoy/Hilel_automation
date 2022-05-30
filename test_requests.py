@@ -5,7 +5,7 @@ from selenium import webdriver
 
 @pytest.mark.slow
 @pytest.mark.all
-@pytest.makr.ui
+@pytest.mark.ui
 @pytest.mark.smoke
 def test_request(message):
     url = "https://google.com"
@@ -24,7 +24,7 @@ def test_request(message):
 @pytest.mark.smoke
 @pytest.mark.multy
 @pytest.mark.api
-def test_request_200(url):
+def test_request_200(url, request):
     response = requests.get(url).status_code
     assert response == 200, f"failed with {url}"
 
