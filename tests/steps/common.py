@@ -1,3 +1,5 @@
+import requests
+import selenium
 from  selenium import webdriver
 from pytest_bdd import scenarios, given, when, then, parsers
 
@@ -46,3 +48,12 @@ def comparation_l(request):
 #     driver = request.user_session
 #     driver.send_keys()
 #
+@when("User send Get request to <url>")
+def step_impl(request):
+    result = requests.get("url")
+    request.data.get_request = result
+
+
+@then(parsers.re("Check response (?P<code>.*)"))
+def step_impl(code, request):
+    assert request.data.get_request == code
