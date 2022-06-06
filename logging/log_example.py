@@ -1,4 +1,6 @@
 import logging
+import pytest
+
 
 # create logger
 logger = logging.getLogger('Name_of_Logger')
@@ -14,10 +16,10 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 # add formatter to file_handlerh
 file_handler.setFormatter(formatter)
 
-# add file_handlerh to logger
+# add file_handler to logger
 logger.addHandler(file_handler)
 
-
-def test_add_user():
-    logger.info("data from pytest")
+@pytest.mark.parametrize("test_input,expected", [("3+5", 8), ("2+4", 6), ("6*9", 42)])
+def test_add_user(test_input,expected):
+    logger.info(f"data from pytest {test_input}, {expected}")
     pass
