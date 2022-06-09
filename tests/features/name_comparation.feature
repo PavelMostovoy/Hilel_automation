@@ -12,14 +12,3 @@ Feature: Second Feathure
       | Bill | Mike   |
       | Mike | Mike   |
       | Bob  | Mike   |
-
-  Scenario Outline: Test login user
-    Given User '<name>'
-
-    When User send Get request to <url>
-    Then Check response <code>
-
-    Examples:
-      | name | data | User_1 | browser | browser_1 | url         | code   |
-      | Bill | 123  | Tim    | chrome  | chrome    | https://www | 200 |
-      | Timm | 2456 | Nic    | chrome  | firefox   | https://www | 403|
