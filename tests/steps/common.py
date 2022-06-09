@@ -21,8 +21,10 @@ def second_user(name, name_0, request):
 
 @then("Compare Users names")
 def comparation_l(request):
-    assert request.primary_name == request.second_name
-    # assert request.login == request.second_name
+    user_1 = request.primary_name
+    user_2 = request.second_name
+    assert user_1 == user_2, f"User #1 is {user_1} but User #2 is {user_2}"
+
 
 #
 # @given(parsers.re("User_1 '(?P<name_1>.*)'"))

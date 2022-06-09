@@ -12,3 +12,15 @@ Feature: Second Feathure
       | Bill | Mike   |
       | Mike | Mike   |
       | Bob  | Mike   |
+      | Bob  | Bob    |
+      | Bill | Mike   |
+      | Mike | Mike   |
+      | Bob  | Mike   |
+      | Bob  | Bob    |
+      | Bill | Mike   |
+      | Mike | Mike   |
+      | Bob  | Mike   |
+      | Bob  | Bob    |
+      | Bill | Mike   |
+      | Mike | Mike   |
+      | Bob  | Mike   |
