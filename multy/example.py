@@ -9,6 +9,9 @@ async def our_func():
 async def new_func():
     for i in range(5):
         await asyncio.sleep(1)
+        if i ==2:
+            print("done")
+            return
         print(f"New running {i}")
 
 
